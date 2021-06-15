@@ -18,5 +18,5 @@ func main() {
 		return
 	}
 	str := base64.StdEncoding.EncodeToString(b)
-	fmt.Printf("gws:%s\n", str)
+	fmt.Printf("gjs:%s\n", str)
 }
