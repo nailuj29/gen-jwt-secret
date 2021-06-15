@@ -3,15 +3,14 @@ package main
 import (
 	"crypto/rand"
 	"encoding/base64"
+	"flag"
 	"fmt"
 )
 
-const (
-	bits = 256
-)
-
 func main() {
-	c := bits / 8
+	bitsFlag := flag.Int("bits", 256, "the number of bits in the secret")
+	flag.Parse()
+	c := *bitsFlag / 8
 	b := make([]byte, c)
 	_, err := rand.Read(b)
 	if err != nil {
@@ -19,5 +18,5 @@ func main() {
 		return
 	}
 	str := base64.StdEncoding.EncodeToString(b)
-	fmt.Printf("jwtSec:%s\n", str)
+	fmt.Printf("gws:%s\n", str)
 }
