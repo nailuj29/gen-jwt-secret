@@ -3,7 +3,9 @@ Generates a JWT secret
 ```bash
 $ go install github.com/nailuj29gaming/gen-jwt-secret
 $ gen-jwt-secret
-gjs:gJPGD05n2Wfu5yiVHCQFko0XI8qe+97FgUDhloRPuc0=
+gen-jwt-sec;1.0.3;256:flAKcJhFhPkNXNVSOb8SEEDF4ZsKUlm4uoI2y1W2ui0=
 $ gen-jwt-secret --bits 64
-gjs:v+BzlRMcmNU=
+gen-jwt-sec;1.0.3;64:1wq0zH/9CW8=
+$ gen-jwt-secret --plain
+I7Tta91/qSMFp9A7TVJE/E9op2U24lAIGQdIFCshBL8=
 ```
